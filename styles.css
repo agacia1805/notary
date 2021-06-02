@@ -1,0 +1,45 @@
+root {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    background: #fae0e4 linear-gradient(to right, #d7e3fc, #b6ccfe);
+    color: #072238;
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.responsive {
+    max-width: 75%;
+    height: auto;
+}
+
+img {
+    padding: 1.5rem;
+}
+
+.displayBox {
+    width: 100%;
+}
+
+.scroll-box {
+    float: left;
+    height: 50rem;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.card.md-4,
+.card-header,
+.card-footer {
+    background-color: rgb(219, 229, 255);
+    border-color: #b0bbcf;
+}
+
+
+
+
+
