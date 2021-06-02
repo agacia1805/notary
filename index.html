@@ -65,12 +65,12 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-unstyled mb-0">
-                                    <li><a href="#" >Lord Of The Rings</a></li>
-                                    <li><a href="#" >The Master and Margarita</a></li>
-                                    <li><a href="#" >Jekyll and Hyde</a></li>
-                                    <li><a href="#" >Laughter In The Dark</a></li>
-                                    <li><a href="#" >The Sea of Tranquility</a></li>
-                                    <li><a href="#">Alice in Wonderland</a></li>
+                                    <li><a href="#" onclick="loadBook('LOTR.txt', 'Lord Of The Rings')">Lord Of The Rings</a></li>
+                                    <li><a href="#" onclick="loadBook('MAM.txt', 'The Master and Margarita')">The Master and Margarita</a></li>
+                                    <li><a href="#" onclick="loadBook('JAH.txt', 'Jekyll and Hyde')">Jekyll and Hyde</a></li>
+                                    <li><a href="#" onclick="loadBook('LITD.txt', 'Laughter In The Dark')">Laughter In The Dark</a></li>
+                                    <li><a href="#" onclick="loadBook('TSOT.txt', 'The Sea of Tranquility')">The Sea of Tranquility</a></li>
+                                    <li><a href="#" onclick="loadBook('AIW.txt', 'Alice In Wonderland')">Alice In Wonderland</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <ul class="list-unstyled mb-0" id="mostUsed">
+                                <ul class="list-unstyled mb-0" id="leastUsed">
                                 </ul>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <ul class="list-unstyled mb-0" id="mostUsed">
+                                <ul class="list-unstyled mb-0" id="documentStats">
                                     <li id="docLength"></li>
                                     <li id="wordCount"></li>
                                     <li id="charCount"></li>
@@ -115,8 +115,14 @@
             </div>
         </div>
     </div>
+    <script id="template-ul-items" type="text/template">
+        <li>
+            {{val}}
+        </li>
+    </script>
 
 <!-- Optional JavaScript -->
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
