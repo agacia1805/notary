@@ -7,4 +7,5 @@ What I covered during work with that project:
 I find room for improvement in that project with the following things:
 - instead of XMLHttpRequest there could be used fetch
 - search, most and least used words and document stats should be invisible when you open a page and show only after the book is chosen
+
 This project gave me a better understanding of how functions work and how important it is to plan ahead all the logic.
